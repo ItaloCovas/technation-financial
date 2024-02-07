@@ -14,6 +14,7 @@ ul {
 .sidebar-menu {
   height: 85vh;
   font-size: 18px;
+  background: #f3f4f6;
 }
 
 .sidebar-menu li {
@@ -21,6 +22,7 @@ ul {
 }
 
 .logo-container {
+  background: #f3f4f6;
   height: 15vh;
   width: 100%;
   border-bottom: 2px double #d3d3d3;
@@ -35,10 +37,12 @@ ul {
   padding: 0px 30px;
   height: 15vh;
   border-bottom: 2px double #d3d3d3;
+  background: #f3f4f6;
 }
 
 .navigation-menu h1 {
   font-size: 30px;
+  color: #fb923c;
 }
 
 .avatar-container img {
@@ -52,12 +56,22 @@ ul {
 }
 
 .main-content {
+  height: 85vh;
   padding: 30px;
 }
 
 .menu-item {
   cursor: pointer;
+  font-weight: 500;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
   color: #6b7280;
+}
+
+.menu-item.selected {
+  color: white;
+  background-color: #d3d3d3;
+  font-weight: bold;
 }
 
 .logout span {

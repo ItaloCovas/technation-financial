@@ -19,8 +19,8 @@
     <title>Financy - Início</title>
   </head>
 
-  <body class="h-100 w-100 d-flex">
-    <aside class="h-100 sidebar">
+  <body class="w-100 d-flex">
+    <aside class="sidebar">
       <div
         class="d-flex justify-content-center align-items-center logo-container"
       >
@@ -34,7 +34,7 @@
         <ul class="d-flex flex-column gap-3 p-0">
           <a
             href="./index.html"
-            class="d-flex align-items-center text-decoration-none menu-item py-2 ps-2 selected"
+            class="d-flex align-items-center text-decoration-none menu-item py-2 ps-2"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -96,7 +96,7 @@
               d="M10.476,21a1,1,0,0,1-1,1H3a1,1,0,0,1-1-1V3A1,1,0,0,1,3,2H9.476a1,1,0,0,1,1,1V8.333h2V3a3,3,0,0,0-3-3H3A3,3,0,0,0,0,3V21a3,3,0,0,0,3,3H9.476a3,3,0,0,0,3-3V15.667h-2Z"
             />
           </svg>
-          <span class="ms-3">Logout</span>
+          <span class="ms-3 fw-bold">Logout</span>
         </div>
       </div>
     </aside>
@@ -119,10 +119,87 @@
         </div>
       </nav>
 
-      <main class="main-content">asudhusah</main>
+      <main class="main-content">
+        <div class="d-flex flex-column container mb-4 ms-0 ps-0 gap-4">
+          <span class="fw-bold">FILTROS: </span>
+          <div class="d-flex">
+            <select id="filterMonth" class="form-select">
+              <option value="Janeiro">Janeiro</option>
+              <option value="Fevereiro">Fevereiro</option>
+              <option value="Março">Março</option>
+              <option value="Abril">Abril</option>
+              <option value="Maio">Maio</option>
+              <option value="Junho">Junho</option>
+              <option value="Julho">Julho</option>
+              <option value="Agosto">Agosto</option>
+              <option value="Setembro">Setembro</option>
+              <option value="Outubro">Outubro</option>
+              <option value="Novembro">Novembro</option>
+              <option value="Dezembro">Dezembro</option>
+            </select>
+
+            <select id="filterQuarter" class="form-select">
+              <option value="1">Primeiro Trimestre</option>
+              <option value="2">Segundo Trimestre</option>
+              <option value="3">Terceiro Trimestre</option>
+              <option value="4">Quarto Trimestre</option>
+            </select>
+
+            <select id="filterYear" class="form-select">
+              <option value="2019">2019</option>
+              <option value="2020">2020</option>
+              <option value="2021">2021</option>
+              <option value="2022">2022</option>
+              <option value="2023">2023</option>
+              <option value="2024">2024</option>
+            </select>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-5 total-issued rounded p-3 me-4">
+              <h2>Valor total das notas emitidas</h2>
+              <p id="totalInvoiceAmount"></p>
+            </div>
+            <div class="col-5 rounded total-issued__uncharged p-3">
+              <h2>Valor total das notas emitidas (sem cobrança)</h2>
+              <p id="totalUnchargedAmount"></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-5 total-revenue rounded p-3 mt-4 me-4">
+              <h2>Valor total das notas vencidas - Inadimplência</h2>
+              <p id="totalOverdueAmount"></p>
+            </div>
+            <div class="col-5 total-due rounded p-3 mt-4">
+              <h2>Valor total das notas a vencer</h2>
+              <p id="totalDueAmount"></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-5 p-3 rounded total-paid mt-4">
+              <h2>Valor total das notas pagas</h2>
+              <p id="totalPaidAmount"></p>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex gap-4 container mt-5">
+          <div class="col-5">
+            <canvas id="revenueChart"
+              >Seu navegador não suporta o canvas.</canvas
+            >
+          </div>
+          <div class="col-5">
+            <canvas id="overdueChart"
+              >Seu navegador não suporta o canvas.</canvas
+            >
+          </div>
+        </div>
+      </main>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="./js/index.js"></script>
   </body>
 </html>

@@ -9,10 +9,11 @@ ul {
 .sidebar {
   width: 400px;
   border-right: 2px double #d3d3d3;
+  background: #f3f4f6;
 }
 
 .sidebar-menu {
-  height: 85vh;
+  height: 100vh;
   font-size: 18px;
   background: #f3f4f6;
 }
@@ -23,7 +24,7 @@ ul {
 
 .logo-container {
   background: #f3f4f6;
-  height: 15vh;
+  height: 13vh;
   width: 100%;
   border-bottom: 2px double #d3d3d3;
   color: #f1f4f9;
@@ -34,8 +35,8 @@ ul {
 }
 
 .navigation-menu {
-  padding: 0px 30px;
-  height: 15vh;
+  padding: 20px 30px;
+  height: 13vh;
   border-bottom: 2px double #d3d3d3;
   background: #f3f4f6;
 }
@@ -56,8 +57,33 @@ ul {
 }
 
 .main-content {
-  height: 85vh;
-  padding: 30px;
+  height: fit-content;
+  padding: 50px 30px;
+}
+
+.main-content h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.total-paid {
+  background-color: #d5e4e2;
+}
+
+.total-issued {
+  background-color: #f0dbf8;
+}
+
+.total-issued__uncharged {
+  background-color: #f0dbf8;
+}
+
+.total-revenue {
+  background-color: #ffeee5;
+}
+
+.total-due {
+  background-color: #ffeee5;
 }
 
 .menu-item {
@@ -65,6 +91,10 @@ ul {
   font-weight: 500;
   border-top-left-radius: 12px;
   border-bottom-left-radius: 12px;
+  color: #6b7280;
+}
+
+.menu-item:hover {
   color: #6b7280;
 }
 

@@ -74,6 +74,11 @@ ul {
   background-color: #f0dbf8;
 }
 
+.main-content svg {
+  right: 10px;
+  bottom: 10px;
+}
+
 .total-issued__uncharged {
   background-color: #f0dbf8;
 }

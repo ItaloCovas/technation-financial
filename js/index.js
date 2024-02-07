@@ -137,4 +137,21 @@ $(document).ready(function () {
       ],
     },
   });
+
+  $("#filterMonth").change(function () {
+    const selectedMonth = $("#filterMonth").val();
+
+    // Filtrar a data pelo mês selecionado
+    const filteredOverdueData =
+      dashboardData.dashboardIndicators.evolutionOfOverdue.data.find(
+        (item) => item.month === selectedMonth
+      );
+    const filteredRevenueData =
+      dashboardData.dashboardIndicators.evolutionOfRevenue.data.find(
+        (item) => item.month === selectedMonth
+      );
+
+    $("#totalOverdueAmount").text(formatToBRL(filteredOverdueData.value));
+    $("#totalPaidAmount").text(formatToBRL(filteredRevenueData.value)); // Assuming totalPaidNotes corresponds to revenue
+  });
 });

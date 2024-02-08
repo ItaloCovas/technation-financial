@@ -148,16 +148,13 @@ $(document).ready(function () {
   function filterTableRows() {
     const selectedStatus = $("#status").val();
 
-    // Show all rows if "Todas" is selected
     if (selectedStatus === "Todas") {
       $("tbody tr").show();
       return;
     }
 
-    // Hide all rows initially
     $("tbody tr").hide();
 
-    // Show rows with matching status
     $(`tbody tr`).each(function () {
       const status = $(this).find("td:last-child").text().trim();
       console.log(status, "status");
@@ -167,6 +164,5 @@ $(document).ready(function () {
       }
     });
   }
-  // Call the filter function when the status dropdown changes
   $("#status").change(filterTableRows);
 });

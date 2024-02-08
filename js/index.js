@@ -152,6 +152,6 @@ $(document).ready(function () {
       );
 
     $("#totalOverdueAmount").text(formatToBRL(filteredOverdueData.value));
-    $("#totalPaidAmount").text(formatToBRL(filteredRevenueData.value)); // Assuming totalPaidNotes corresponds to revenue
+    $("#totalPaidAmount").text(formatToBRL(filteredRevenueData.value));
   });
 });

@@ -13,6 +13,7 @@ ul {
 
 .sidebar-menu {
   border-right: 2px double #d3d3d3;
+  min-height: 100vh;
   height: 100%;
   font-size: 18px;
   background: #f3f4f6;

@@ -23,9 +23,9 @@
 
 ## Rodando o projeto (diversas formas)
 
-<p>=> Você pode abrir o projeto diretamente pelo navegador, abrindo o arquivo index.html.</p>
-<p>=> Você pode baixar o Visual Studio Code e instalar a extensão "Live Server", após isso abra a pasta do projeto lá.</p>
-<p>=> Você pode entrar no link de produção: https://technation-financial.vercel.app/</p>
+<p>• Você pode abrir o projeto diretamente pelo navegador, abrindo o arquivo index.html.</p>
+<p>• Você pode baixar o Visual Studio Code e instalar a extensão "Live Server", após isso abra a pasta do projeto lá.</p>
+<p>• Você pode entrar no link de produção: https://technation-financial.vercel.app/</p>
 
 
 ## Sobre mim e Considerações Finais

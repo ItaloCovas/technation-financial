@@ -1,0 +1,16 @@
+.invoice-list {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  text-align: left;
+}
+
+.invoice-list tbody td {
+  border-right: 0.5px solid rgba(0, 0, 0, 0.1);
+}
+
+.invoice-list th {
+  border-right: 0.5px solid rgba(0, 0, 0, 0.1);
+}
+
+.last-invoices__title {
+  color: #fb923c;
+}

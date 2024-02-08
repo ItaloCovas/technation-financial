@@ -8,12 +8,12 @@ ul {
 
 .sidebar {
   width: 400px;
-  border-right: 2px double #d3d3d3;
   background: #f3f4f6;
 }
 
 .sidebar-menu {
-  height: 100vh;
+  border-right: 2px double #d3d3d3;
+  height: 100%;
   font-size: 18px;
   background: #f3f4f6;
 }
@@ -26,6 +26,7 @@ ul {
   background: #f3f4f6;
   height: 13vh;
   width: 100%;
+  border-right: 2px double #d3d3d3;
   border-bottom: 2px double #d3d3d3;
   color: #f1f4f9;
 }

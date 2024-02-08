@@ -123,7 +123,7 @@ $(document).ready(function () {
     dashboardData.dashboardIndicators.evolutionOfRevenue.data
   );
 
-  const revenueChart = new Chart(document.getElementById("revenueChart"), {
+  const revenueChart = new Chart(document.querySelector("#revenueChart"), {
     type: "line",
     data: {
       labels: revenueData.labels,

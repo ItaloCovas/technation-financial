@@ -124,13 +124,13 @@ $(document).ready(function () {
       case "Pagamento realizado":
         $(this)
           .find("td.status")
-          .css("color", "green")
+          .css("color", "#22c55e")
           .css("font-weight", "bold");
         break;
       case "Cobrança realizada":
         $(this)
           .find("td.status")
-          .css("color", "#facc15")
+          .css("color", "#fb923c")
           .css("font-weight", "bold");
         break;
       default:
